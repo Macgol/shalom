@@ -1,0 +1,141 @@
+/* ===============================
+   ABOUT HERO
+================================ */
+.about-hero {
+  min-height: 55vh;
+  background:
+    linear-gradient(rgba(15,23,42,0.75), rgba(15,23,42,0.75)),
+    url("../shalom_pics/student3.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 0 6%;
+}
+
+.about-hero-content {
+  max-width: 700px;
+  color: white;
+}
+
+.about-hero h1 {
+  font-size: clamp(2.4rem, 4vw, 3.2rem);
+  margin-bottom: 12px;
+}
+
+.about-hero p {
+  color: #e5e7eb;
+  font-size: 1.05rem;
+}
+
+/* ===============================
+   WRAPPER
+================================ */
+.about-wrapper {
+  padding: 90px 6%;
+  background: linear-gradient(to bottom, #0f172a, #020617);
+}
+
+/* ===============================
+   SECTIONS
+================================ */
+.about-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  margin-bottom: 90px;
+  align-items: center;
+}
+
+.about-section.reverse {
+  direction: rtl;
+}
+
+.about-section.reverse > * {
+  direction: ltr;
+}
+
+.about-text h3 {
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+  color: #f8fafc;
+}
+
+.about-text p,
+.about-text li {
+  color: #cbd5e1;
+  margin-bottom: 12px;
+  line-height: 1.7;
+}
+
+.about-text ul {
+  padding-left: 18px;
+  margin-bottom: 16px;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+}
+
+/* ===============================
+   VALUES
+================================ */
+.values-section {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.values-section h3 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: white;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+}
+
+.value-card {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  padding: 22px;
+  border-radius: 999px;
+  color: #f8fafc;
+  font-weight: 600;
+}
+
+/* ===============================
+   FINAL MESSAGE
+================================ */
+.about-final {
+  max-width: 700px;
+  margin: auto;
+  text-align: center;
+}
+
+.about-final h3 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+  color: white;
+}
+
+.about-final p {
+  color: #cbd5e1;
+  margin-bottom: 14px;
+}
+
+/* ===============================
+   MOBILE
+================================ */
+@media (max-width: 900px) {
+  .about-section {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .about-text ul {
+    text-align: left;
+  }
+}

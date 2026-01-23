@@ -1,0 +1,171 @@
+/* GLOBAL SECTION SPACING */
+.enroll-intro,
+.why-enroll,
+.who-can-apply,
+.requirements,
+.how-to-apply,
+.fees-note,
+.enroll-cta {
+  padding: 70px 6%;
+}
+
+
+/* HERO */
+.enroll-hero {
+  height: 70vh;
+  background: url("../shalom_pics/admission\ banner.png") center/cover no-repeat;
+  position: relative;
+}
+
+.enroll-hero .overlay {
+  background: rgba(5, 15, 30, 0.75);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.enroll-hero .hero-content {
+  text-align: center;
+  max-width: 700px;
+  padding: 20px;
+}
+
+.enroll-hero h1 {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.enroll-hero p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+/* INTRO */
+.enroll-intro {
+  background: #0f1b2d;
+  text-align: center;
+}
+
+.enroll-intro p {
+  max-width: 800px;
+  margin: auto;
+}
+
+/* WHY */
+.why-enroll {
+  background: #0b1626;
+}
+
+.why-enroll .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.why-enroll .card {
+  background: #111f34;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.why-enroll i {
+  font-size: 2rem;
+  color: #f5b942;
+  margin-bottom: 15px;
+}
+
+/* WHO CAN APPLY */
+.who-can-apply {
+  background: #0f1b2d;
+}
+
+.who-can-apply .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.who-can-apply img {
+  width: 100%;
+  height: 50vh;
+  border-radius: 18px;
+  padding: 10px;
+}
+
+/* REQUIREMENTS */
+.requirements {
+  background: #0b1626;
+}
+
+.req-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.req-list div {
+  background: #111f34;
+  padding: 15px 20px;
+  border-radius: 12px;
+}
+
+.req-list i {
+  color: #4caf50;
+  margin-right: 8px;
+}
+
+/* HOW TO APPLY */
+.how-to-apply {
+  background: #0f1b2d;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+}
+
+.step {
+  background: #111f34;
+  padding: 25px;
+  border-radius: 16px;
+  text-align: center;
+}
+
+.step span {
+  display: inline-block;
+  background: #f5b942;
+  color: #000;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* FEES */
+.fees-note {
+  background: #0b1626;
+  text-align: center;
+}
+
+/* CTA */
+.enroll-cta {
+  background: linear-gradient(135deg, #1b2f52, #0f1b2d);
+  text-align: center;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .who-can-apply .container {
+    grid-template-columns: 1fr;
+  }
+
+  .enroll-hero h1 {
+    font-size: 2.2rem;
+  }
+}

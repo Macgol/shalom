@@ -1,0 +1,205 @@
+/* ===============================
+   HERO
+================================ */
+.academics-hero {
+  min-height: 55vh;
+  background:
+    linear-gradient(rgba(2,6,23,0.8), rgba(2,6,23,0.85)),
+    url("../shalom_pics/academics1.jpg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  padding: 0 6%;
+}
+
+.academics-hero-content {
+  max-width: 750px;
+  color: white;
+}
+
+.academics-hero h1 {
+  font-size: clamp(2.4rem, 4vw, 3.2rem);
+  margin-bottom: 14px;
+}
+
+.academics-hero p {
+  color: #cbd5e1;
+  font-size: 1.05rem;
+}
+
+/* ===============================
+   WRAPPER
+================================ */
+.academics-wrapper {
+  padding: 90px 6%;
+  background: linear-gradient(to bottom, #020617, #0f172a);
+}
+
+/* ===============================
+   INTRO
+================================ */
+.academics-intro {
+  max-width: 800px;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.academics-intro h2 {
+  font-size: 2.2rem;
+  margin-bottom: 16px;
+  color: white;
+}
+
+.academics-intro p {
+  color: #cbd5e1;
+  line-height: 1.7;
+}
+
+/* ===============================
+   LEVELS
+================================ */
+.levels-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 35px;
+  margin-bottom: 100px;
+}
+
+.level-card {
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: 36px;
+  border-radius: 22px;
+  transition: transform 0.3s ease;
+}
+
+.level-card:hover {
+  transform: translateY(-6px);
+}
+
+.level-card h3 {
+  color: #f8fafc;
+  margin-bottom: 14px;
+}
+
+.level-card p {
+  color: #cbd5e1;
+  margin-bottom: 16px;
+}
+
+.level-card ul {
+  padding-left: 18px;
+}
+
+.level-card li {
+  color: #cbd5e1;
+  margin-bottom: 8px;
+}
+
+/* ===============================
+   APPROACH
+================================ */
+.approach-section {
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+.approach-section h2 {
+  font-size: 2.2rem;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.approach-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+}
+
+.approach-card {
+  background: rgba(255,255,255,0.05);
+  padding: 32px;
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.approach-card h4 {
+  color: #f8fafc;
+  margin-bottom: 12px;
+}
+
+.approach-card p {
+  color: #cbd5e1;
+}
+
+/* ===============================
+   EXTRAS
+================================ */
+.extras-section {
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+.extras-section h2 {
+  font-size: 2.2rem;
+  color: white;
+  margin-bottom: 16px;
+}
+
+.extras-section p {
+  color: #cbd5e1;
+  margin-bottom: 30px;
+}
+
+.extras-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 14px;
+}
+
+.extras-list span {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.12);
+  padding: 12px 22px;
+  border-radius: 999px;
+  color: #f8fafc;
+  font-size: 0.95rem;
+}
+
+/* ===============================
+   CTA
+================================ */
+.academics-cta {
+  text-align: center;
+  padding: 90px 6%;
+  background: linear-gradient(135deg, #1e3a8a, #020617);
+  border-radius: 28px;
+}
+
+.academics-cta h2 {
+  color: white;
+  font-size: 2.2rem;
+  margin-bottom: 14px;
+}
+
+.academics-cta p {
+  color: #e5e7eb;
+  margin-bottom: 30px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ===============================
+   MOBILE
+================================ */
+@media (max-width: 768px) {
+  .academics-hero {
+    text-align: center;
+  }
+
+  .academics-wrapper {
+    padding: 70px 6%;
+  }
+}

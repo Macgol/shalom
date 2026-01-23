@@ -1,0 +1,228 @@
+/* HERO CAROUSEL */
+.gallery-hero-carousel {
+  height: 75vh;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-track {
+  display: flex;
+  height: 100%;
+  animation: slideHero 18s infinite;
+}
+
+.hero-slide {
+  min-width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+@keyframes slideHero {
+  0%, 33% { transform: translateX(0); }
+  38%, 66% { transform: translateX(-100%); }
+  71%, 100% { transform: translateX(-200%); }
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(5,15,30,0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* COLLAGE */
+.gallery-collage {
+  padding: 90px 6%;
+  background: #0f1b2d;
+}
+
+.collage-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 25px;
+}
+
+.collage-large img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+.collage-small {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.collage-small img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* THUMB CAROUSEL */
+.gallery-thumb-carousel {
+  padding: 90px 6%;
+  background: #0b1626;
+  text-align: center;
+}
+
+.main-image img {
+  width: 100%;
+  max-width: 850px;
+  height: 420px;
+  object-fit: cover;
+  border-radius: 22px;
+  margin-bottom: 20px;
+}
+
+.thumbs {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+}
+
+.thumbs img {
+  width: 90px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 10px;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.thumbs img:hover {
+  opacity: 1;
+}
+
+/* WALL */
+.gallery-wall {
+  padding: 90px 6%;
+  background: #0f1b2d;
+}
+
+.wall-grid {
+  columns: 4;
+  column-gap: 16px;
+}
+
+.wall-grid img {
+  width: 100%;
+  margin-bottom: 16px;
+  border-radius: 14px;
+}
+
+/* STRIP CAROUSEL */
+.gallery-strip-carousel {
+  padding: 80px 6%;
+  background: #0b1626;
+}
+
+.strip {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.strip img {
+  min-width: 320px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 16px;
+  scroll-snap-align: start;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .collage-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .wall-grid {
+    columns: 2;
+  }
+}
+
+
+/* carol */
+/* CHRISTMAS CAROL EVENT */
+.christmas-carroll {
+  padding: 100px 6%;
+  background: linear-gradient(135deg, #0f1b2d, #12213a);
+}
+
+.carol-header {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 50px;
+}
+
+.carol-header h2 {
+  font-size: 2.4rem;
+  margin-bottom: 12px;
+}
+
+.carol-header p {
+  font-size: 1.05rem;
+  opacity: 0.85;
+}
+
+/* GRID */
+.carol-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 25px;
+  align-items: stretch;
+}
+
+/* FEATURE IMAGE */
+.carol-feature img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 22px;
+  transition: transform 0.4s ease;
+}
+
+.carol-feature img:hover {
+  transform: scale(1.02);
+}
+
+/* THUMBNAILS */
+.carol-thumbs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.carol-thumbs img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 16px;
+  cursor: pointer;
+  transition: transform 0.35s ease, opacity 0.35s ease;
+}
+
+.carol-thumbs img:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .carol-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .carol-feature img {
+    height: 320px;
+  }
+}
