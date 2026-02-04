@@ -182,7 +182,7 @@
 /* Mobile */
 @media (max-width: 500px) {
   .masonry {
-    column-count: 1;
+    column-count: 2;
   }
 }
 
