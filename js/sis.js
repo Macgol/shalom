@@ -193,3 +193,30 @@ function initFAQ() {
 document.addEventListener("DOMContentLoaded", () => {
   initFAQ();
 });
+
+
+// skill gallery
+document.querySelectorAll(".carousel").forEach((carousel) => {
+  const track = carousel.querySelector(".carousel-track");
+  const slides = carousel.querySelectorAll(".carousel-track img");
+  const nextBtn = carousel.querySelector(".carousel-btn.next");
+  const prevBtn = carousel.querySelector(".carousel-btn.prev");
+
+  let index = 0;
+  const totalSlides = slides.length;
+
+  function updateCarousel() {
+    track.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  nextBtn.addEventListener("click", () => {
+    index = (index + 1) % totalSlides;
+    updateCarousel();
+  });
+
+  prevBtn.addEventListener("click", () => {
+    index = (index - 1 + totalSlides) % totalSlides;
+    updateCarousel();
+  });
+});
+

@@ -246,7 +246,9 @@ section {
   flex-wrap: wrap;
   font-size: 0.9rem;
 }
-
+.footer-bottom a:hover{
+  text-decoration: underline white;
+}
 @media (max-width: 600px) {
   .footer-bottom {
     flex-direction: column;
